@@ -70,5 +70,6 @@ html {
 
 form {
     border: 2px solid black;
+    padding: 12px;
 }
 
