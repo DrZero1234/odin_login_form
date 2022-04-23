@@ -63,5 +63,11 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    row-gap: 10em;
+}
+
+form {
+    border: 2px solid black;
 }
 
