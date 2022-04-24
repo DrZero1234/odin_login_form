@@ -138,12 +138,10 @@ abbr[title="required"] {
     color: #b30000
 }
 
+
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-}
-
-input[type="checkbox"] {
     position: relative;
     width: 1em;
     height: 1em;
@@ -166,6 +164,42 @@ input[type="checkbox"]:checked::before {
 }
 
 input[type="checkbox"]:hover {
-    outline: 3px solid black;
+    outline: 2px solid green;
     background-color: rgba(0,0,0,.15);
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: .8em;
+    height: .6em;
+    border: 1px solid black;
+    border-radius: 1em;
+    vertical-align: -5px;
+}
+
+input[type="radio"]::before {
+    display: block;
+    content: " ";
+    width: .6em;
+    height: .6em;
+    border-radius: 1em;
+    font-size: 1.9em;
+    background-color: rgb(29, 74, 221);
+    position: absolute;
+    top: .5px;
+    left: .7px;
+    transform: translate(3px, 3px) scale(0);
+    transition: all 0.3s ease-in;
+}
+
+input[type="radio"]:checked::before{
+    transform: translate(2px, 2px) scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2)
+}
+
+input[type="radio"]:hover {
+    outline: 2px solid blue;
+    opacity: .75;
 }
