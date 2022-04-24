@@ -12,8 +12,9 @@ html {
 
 .registration {
     display: flex;
-    justify-content: space-between;
 }
+
+/* Sidebar styles */
 
 .sidebar {
     display: flex;
@@ -51,29 +52,31 @@ html {
 }
 
 .sidebar-logo-container span {
-    font-size: 4.1rem;
+    font-size: 3.5rem;
     color: black;
 }
+
+/* Main content styles */
 
 .main-content {
     background-color: grey;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    width: 100vw;
     row-gap: 3em;
-    padding: 20px;
 }
 
 .reg-form {
     display: flex;
-    flex-direction: column;
 }
 
 
 form {
-    border: 2px solid black;
+    border: none;
+    width: 100%;
+    padding: 70px;
+    background: linear-gradient(135deg, grey 10%, white );
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 form div {
@@ -82,20 +85,31 @@ form div {
 
 form input {
     margin-top: 10px;
-    margin-bottom: ;
     padding: 10px;
+    border-radius: 6px;
+    border: none;
 }
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus {
+    outline: 2px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .registration-username input,
 .registration-email input,
 .registration-phone input 
 {
+    min-width: 25%;
     width: 100%;
 }
 
 
 .registration-names input,
 .registration-password input {
-    min-width: 30%;
+    min-width: 25%;
 }
 
 button {
@@ -106,4 +120,10 @@ button {
     border: none;
 }
 
+abbr[title="required"] {
+    color: #b30000
+}
 
+.registration-password input:invalid::after {
+    outline: 2px solid #b30000;
+}
