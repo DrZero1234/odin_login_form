@@ -64,7 +64,14 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    row-gap: 10em;
+    width: 100%;
+    row-gap: 5em;
+    padding: 20px;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
     width: auto;
 }
 
@@ -72,4 +79,23 @@ form {
     border: 2px solid black;
     padding: 12px;
 }
+
+input {
+    margin: 10px;
+    padding: 10px;
+}
+
+.registration-username input,
+.registration-email input,
+.registration-phone input 
+{
+    width: 100%;
+}
+
+
+.registration-names input,
+.registration-password input {
+    width: 30%;
+}
+
 

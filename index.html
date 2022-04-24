@@ -11,7 +11,6 @@
     <title>Login Form</title>
 </head>
 <body>
-    <div class="wrapper">
         <div class="registration">
             <div class="sidebar">
                 <span></span>
@@ -24,7 +23,7 @@
             <div class="main-content">
                 <h2>This is not a real online service. You know you need something like this in your life to realize your deepest dreams</h2>
                 <div class="reg-form">
-                <form action="" method="get" class="registration">
+                <form action="" method="get">
                     
                     <h1>Registration</h1>>
                     <div class="registration-username">
@@ -64,6 +63,8 @@
                         </label>
                         <input type="tel" name="u_phone" id="phone">
                     </div>
+
+                    <div class="registration-password">
                       
                       <label for="password">
                         <span>Password </span>
@@ -76,20 +77,29 @@
                         <strong><abbr title="required">*</abbr></strong>
                       </label>
                       <input type="password" name="pword-conf" id="password-again">
+                    </div>
 
+                    <div class="registration-gender">
                        <label for="male">Male</label>
                        <input type="radio" id="male" name="gender" value="male">
                        <label for="female">Female</label>
                        <input type="radio" id="female" name="gender" value="female">
                        <label for="other">Other</label>
                        <input type="radio" id="other" name="gender" value="other">
+                    </div>
 
+                    <div class="registration-terms">
                        <label for="terms">I agree with the terms and coditions</label>
                        <input type="checkbox" id="terms" required>
-                </form>
+                    </div>
                 </div>
+
+                    <div class="registration-button">
+                        <button type="submit">Create account</button>
+                    </div>
+                </form>
+
             </div>
         </div>
-    </div>
 </body>
 </html> 
