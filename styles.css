@@ -71,8 +71,13 @@ html {
     flex-direction: column;
 }
 
+
 form {
     border: 2px solid black;
+}
+
+form div {
+    margin: 10px;
 }
 
 form input {
@@ -90,7 +95,7 @@ form input {
 
 .registration-names input,
 .registration-password input {
-    width: 30%;
+    min-width: 30%;
 }
 
 button {
