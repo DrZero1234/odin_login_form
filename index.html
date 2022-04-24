@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Login Form</title>
 </head>
 <body>
@@ -21,11 +22,13 @@
                 <span>Photo by <a href="https://unsplash.com/@roadahead_2223">Road Ahead</a> on <a href="https://unsplash.com">Unsplash</a></span>
             </div>
             <div class="main-content">
-                <h2>This is not a real online service. You know you need something like this in your life to realize your deepest dreams</h2>
+                <h2>This is not a real online service. You know you need something like this in you life to help your realize your deepest dreams.<br>Sign up now to get started</h2>
+                <p><h2>You <em>know</em> you want to.</h2></p>
                 <div class="reg-form">
                 <form action="" method="get">
                     
-                    <h1>Registration</h1>>
+                    <h1>Registration</h1>
+                    <p id="error-msg"></p>
                     <div class="registration-username">
                     <label for="username">
                         <span>Username </span>
@@ -61,7 +64,7 @@
                             <span>Phone number </span>
                             <strong><abbr title="required">*</abbr></strong>
                         </label>
-                        <input type="tel" name="u_phone" id="phone" required>
+                        <input type="tel" name="u_phone" id="phone" required minlength="10">
                     </div>
 
                     <div class="registration-password">
@@ -70,13 +73,13 @@
                         <span>Password </span>
                         <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="password" name="pword" id="password" min="8" required>
+                      <input type="password" name="pword" id="password" minlength="8" required>
 
                       <label for="password-again">
                         <span>Confirm password </span>
                         <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="password" name="pword-conf" id="password-again" min="8" required>
+                      <input type="password" name="pword-conf" id="password-again" minlength="8" required>
                     </div>
 
                     <div class="registration-gender">
