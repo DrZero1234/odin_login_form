@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Custom Font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Login Form</title>
@@ -23,7 +29,7 @@
             </div>
             <div class="main-content">
                 <h2>This is not a real online service. You know you need something like this in you life to help your realize your deepest dreams.<br>Sign up now to get started</h2>
-                <p><h2>You <em>know</em> you want to.</h2></p>
+                <h2>You <em>know</em> you want to.</h2>
                 <div class="reg-form">
                 <form action="" method="get">
                     
@@ -81,8 +87,7 @@
                     </div>
 
                     <div class="registration-gender">
-                        <span>Gender </span>
-                        <strong><abbr title="required">*</abbr></strong><br>
+                        <span>Gender: </span>
                        <label for="male">Male</label>
                        <input type="radio" id="male" name="gender" value="male">
                        <label for="female">Female</label>
@@ -93,6 +98,7 @@
 
                     <div class="registration-terms">
                        <label for="terms">I agree with the terms and coditions</label>
+                       <strong><abbr title="required">*</abbr></strong>
                        <input type="checkbox" id="terms" required>
                     </div>
                 </div>

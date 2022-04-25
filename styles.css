@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Tapestry', cursive;
+}
+
 
 html, body {
     font-family: arial, sans-serif;
@@ -52,6 +56,7 @@ html, body {
 }
 
 .sidebar-logo-container span {
+    font-family: "Oswald", sans-serif;
     font-size: 3.5rem;
     color: black;
 }
@@ -64,7 +69,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    row-gap: 3em;
+    row-gap: 1.5em;
 }
 
 .reg-form {
